@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="#005a99"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/textUserType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/agent_profilepicture"
+                android:layout_centerInParent="true"
+                android:text="Individual"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/textUserType"
+                android:text="Vishvendu Palawat"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:padding="13dp"
+            android:textSize="10dp"
+            android:id="@+id/textView" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="30dp"
+            android:background="#9c9c9c"
+            android:id="@+id/view" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contact"
+            android:layout_below="@+id/view"
+            android:layout_margin="12dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9167161861"
+            android:textStyle="bold"
+android:layout_marginTop="7dp"
+android:layout_marginLeft="50dp"
+            android:id="@+id/ProfileMobileNo"
+            android:layout_below="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mobile"
+    android:textSize="12dp"
+    android:layout_marginLeft="50dp"
+    android:id="@+id/BalanceEnquiry"
+    android:layout_below="@+id/ProfileMobileNo"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mmid"
+            android:layout_marginTop="23dp"
+            android:id="@+id/imageViewe"
+            android:layout_below="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1245647"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/imageViewe"
+            android:layout_alignLeft="@+id/BalanceEnquiry"
+            android:layout_alignStart="@+id/BalanceEnquiry"
+            android:id="@+id/ProfileMMID" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MMID"
+            android:textSize="12dp"
+            android:id="@+id/textView5"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/ProfileMMID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/email"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/imageViewe"
+            android:layout_alignStart="@+id/imageViewe"
+            android:layout_marginTop="27dp"
+            android:id="@+id/imageView4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vishvendu.palawat@infrasofttech.com"
+            android:textStyle="bold"
+android:layout_marginTop="124dp"
+            android:id="@+id/ProfileEmail"
+            android:layout_alignTop="@+id/view"
+            android:layout_alignLeft="@+id/ProfileMobileNo"
+            android:layout_alignStart="@+id/ProfileMobileNo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12dp"
+            android:layout_below="@+id/ProfileEmail"
+            android:layout_alignLeft="@+id/ProfileEmail"
+            android:layout_alignStart="@+id/ProfileEmail"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyAccounts"
+            android:textSize="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:layout_marginTop="39dp"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+
+            android:background="#9c9c9c"
+            android:id="@+id/viewt"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Account"
+            android:textColor="#005a99"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView9" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addnew"
+android:layout_marginTop="10dp"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+

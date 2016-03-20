@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="180dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="180dp"
+    android:background="#ffffff"
+    android:padding="20px"
+    >
+
+
+    <TextView
+        android:id="@+id/tvbankselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="40dp"
+        android:padding="5px"
+
+        android:text=""
+        android:textColor="#a7a7a7"
+
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <TextView
+        android:id="@+id/tvconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5px"
+        android:text="Confirmation "
+        android:textColor="#a7a7a7"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/tvlastname"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:text="Cancel"
+
+
+        android:textColor="#a7a7a7"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/otpok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlastname"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+
+
+        android:text="Ok"
+        android:textColor="#4C6FA5"
+        android:textSize="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Vishvendu Palawat"
+       android:textSize="16dp"
+       android:textStyle="bold"
+       android:padding="10dp"
+       android:id="@+id/AddAccountName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ICICI Bank"
+        android:textSize="12dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/AddAccountBankName"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00903330003473"
+        android:id="@+id/AddAccountAccountNo"
+        android:textSize="12dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="7dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/AddAccountBankName"
+        android:layout_toRightOf="@+id/AddAccountBankName"
+        android:layout_toEndOf="@+id/AddAccountBankName" />
+
+</RelativeLayout>

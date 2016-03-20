@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models
+END
+PhoneBook_SelectUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models/PhoneBook_SelectUser.java
+END
+ContactInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models/ContactInfo.java
+END
+AddAccounts.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models/AddAccounts.java
+END
+BankListModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models/BankListModel.java
+END
+LazyList.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models/LazyList.java
+END
+PendingNotification.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Models/PendingNotification.java
+END

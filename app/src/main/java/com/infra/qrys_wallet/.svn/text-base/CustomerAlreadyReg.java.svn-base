@@ -1,0 +1,419 @@
+package com.infra.qrys_wallet;
+
+import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.InputFilter;
+import android.text.Spanned;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.infra.qrys_wallet.Utils.MWRequest;
+import com.infra.qrys_wallet.Utils.SharedPreference;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.net.URL;
+
+/**
+ * Created by sandeep.devhare on 15-11-2015.
+ */
+public class CustomerAlreadyReg extends AppCompatActivity implements View.OnTouchListener {
+   private static CustomerAlreadyReg inst;
+    private BroadcastReceiver receiver;
+    public static final String SMS_BUNDLE = "pdus";
+    private static final String ACTION = "android.provider.Telephony.SMS_RECEIVED";
+    EditText edtotpno,edtmpinno;
+    Button bNext;
+    TextView tvresendlink,tvforgotmpinlink;
+    String strOtp,strMpin,deviceId;
+    private String blockCharacterSet = "~#^|$%&*!@ ()-+=?/{}[]<>,.;:'";
+    //Service Variables
+    MWRequest mwRequest;
+    String opStatus, result,respParams;
+    ProgressDialog prgDialog;
+    SharedPreference appPref;
+    JSONObject json, jsonInner;
+    private String TAG = "CustomerAlreadyReg";
+    public String emailId,custName,mobileNo,userSelectedBank,mmid;
+    String userAccountNo, shortBankName, cbsType, ifscCode, mmidCode, DeviceId, userMobileNo,emailid, custFullName,bankName;;
+    public static CustomerAlreadyReg instance() {
+        return inst;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        inst = this;
+    }
+    public void updateData(final String smsMessage) {
+       Log.d("Message Contents"," "+smsMessage);
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.customer_already_reg);
+        appPref.getInstance().Initialize(getApplicationContext());
+
+        edtmpinno = (EditText) findViewById(R.id.edtmpin);
+        edtotpno =  (EditText) findViewById(R.id.otpforaddaccount);
+        tvresendlink = (TextView) findViewById(R.id.tvresend);
+        tvforgotmpinlink = (TextView) findViewById(R.id.lblforgotmpin);
+        bNext = (Button) findViewById(R.id.btngonext);
+
+        tvforgotmpinlink.setOnTouchListener(this);
+        tvresendlink.setOnTouchListener(this);
+        edtmpinno.setFilters(new InputFilter[]{filter, new InputFilter.LengthFilter(4)});
+
+
+
+        edtotpno.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                bNext.setVisibility(View.GONE);
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                enableSubmitIfReady();
+            }
+
+            @Override
+            public void afterTextChanged(Editable arg0) {
+            }
+        });
+        edtmpinno.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                bNext.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                enableSubmitIfReady();
+            }
+
+            @Override
+            public void afterTextChanged(Editable arg0) {
+            }
+        });
+
+    }
+    public void recivedSms(String message)
+    {
+        try
+        {
+            edtotpno.setText(message);
+        }
+        catch (Exception e)
+        {
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(receiver);
+    }
+    /*Special char filter */
+    private InputFilter filter = new InputFilter() {
+
+        @Override
+        public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+
+            if (source != null && blockCharacterSet.contains(("" + source))) {
+                return "";
+            }
+            return null;
+        }
+    };
+    public void enableSubmitIfReady() {
+        if (edtotpno.getText().toString().length() == 4 && edtmpinno.getText().toString().length()>0) {
+            bNext.setVisibility(View.VISIBLE);
+            bNext.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    strOtp = edtotpno.getText().toString();
+                    strMpin = edtmpinno.getText().toString();
+                    new VerifyCustomerAlreadyReg().execute();
+                }
+            });
+            Log.d("btn ", " shown");
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_customer_already_reg, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        switch (v.getId()) {
+            case R.id.lblforgotmpin:
+                Intent callOtp = new Intent(CustomerAlreadyReg.this,OTP.class);
+                startActivity(callOtp);
+                finish();
+                break;
+            case R.id.tvresend:
+               new ResendOTP().execute();
+                break;
+        }
+        return false;
+    }
+    //VERIFY CUSTOMER IF ALREADY REGISTERED
+    private class VerifyCustomerAlreadyReg extends AsyncTask<String, Void, String> {
+
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            prgDialog = new ProgressDialog(CustomerAlreadyReg.this);
+            // Set Progress Dialog Text
+            Log.d(TAG, "Test 0"+strMpin+" "+strOtp);
+            prgDialog.setMessage("Please wait...");
+            // Set Cancelable as False
+            prgDialog.setCancelable(false);
+            prgDialog.show();
+        }
+        @Override
+        protected String doInBackground(String... params) {
+            Log.d(TAG, " Test 1 ");
+            String resp = insertOTPandMPIN();
+            return resp;
+        }
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            Log.d(TAG, " Test 2 " + s);
+            if (s.equals("") || s == null) {
+                prgDialog.dismiss();
+                Toast.makeText(getApplicationContext(), "Unable to reach server", Toast.LENGTH_LONG).show();
+                return;
+            } else {
+                Log.d(TAG, " Test 2.0 ");
+                JSONObject mainObj = null;
+                try {
+                    mainObj = new JSONObject(s);
+                    respParams = mainObj.getString("responseParameter");
+                    JSONObject respObj = new JSONObject(respParams);
+
+                    opStatus = respObj.getString("opstatus");
+                    Log.d("opstatus", opStatus);
+                    result = respObj.getString("Result");
+
+                    deviceId = respObj.getString("DeviceId");
+                    emailId = respObj.getString("email_id");
+                    custName = respObj.getString("customerName");
+                    mobileNo = respObj.getString("MobileNo");
+                    userSelectedBank = respObj.getString("bankName");
+                    ifscCode = respObj.getString("ifsc_code");
+
+                    userAccountNo = respObj.getString("accountno");
+                    shortBankName = respObj.getString("QrysSelBank");
+                    cbsType = respObj.getString("cbsType");
+
+                    if(respObj.has("MMIDNo"))
+                    {
+                        mmid = respObj.getString("MMIDNo");
+                    }else
+                    {
+                        mmid = "";
+                    }
+
+                    ifscCode = respObj.optString("ifsc_code");
+                    System.out.println("Responce Save " + deviceId +" "+emailId+" "+custName+" "+mobileNo+" "+userSelectedBank+" "+mmid+" "+ifscCode+" "+userAccountNo+" "+shortBankName+" "+cbsType);
+                    //STORE ALL RESPONCE FROM SERVICE TO SHARED PREFERENCE
+
+                    appPref.getInstance().setString("SharedMMID", mmid);
+                    appPref.getInstance().setString("SharedIFSC", ifscCode);
+                    appPref.getInstance().setString("Device_Id", deviceId);
+                    appPref.getInstance().setString("user_mobile", mobileNo);
+                    appPref.getInstance().setString("selectedBankName",userSelectedBank);
+                    appPref.getInstance().setString("CustFull_Name", custName);
+                    appPref.getInstance().setString("emailID", emailId);
+                    appPref.getInstance().setString("SharedAccountNo", userAccountNo);
+                    appPref.getInstance().setString("selectedBankDescription",shortBankName);
+                    appPref.getInstance().setString("cBsType", cbsType);
+                    //Test whether this response values are saved in sharedpreference.
+                    /*---*/
+                    userAccountNo = appPref.getInstance().getString("SharedAccountNo");
+                    shortBankName = appPref.getInstance().getString("selectedBankDescription");
+                    cbsType = appPref.getInstance().getString("cBsType");
+                    mmidCode = appPref.getInstance().getString("SharedMMID");
+                    ifscCode = appPref.getInstance().getString("SharedIFSC");
+                    DeviceId = appPref.getInstance().getString("Device_Id");
+                    userMobileNo = appPref.getInstance().getString("user_mobile");
+                    bankName = appPref.getInstance().getString("selectedBankName");
+                    custFullName = appPref.getInstance().getString("CustFull_Name");
+                    emailid = appPref.getInstance().getString("emailID");
+
+                    System.out.println("SharedPreference Details In Customer Already Exist after Save \n"
+                            + userMobileNo + " " + DeviceId + " " + shortBankName + " \n"
+                            + cbsType + " " + userAccountNo + " " + mmidCode + "\n "
+                            + ifscCode+" "+custFullName+" "+bankName+" \n"
+                            +emailid+" "+userAccountNo+" "+shortBankName);
+
+                    /*---*/
+                    /*responseParameter":{"DeviceId":"531312592285339","Status":"00","resstatus":"00","opstatus":"00"}}*/
+                    if (opStatus.equals("00")) {
+                       // Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(CustomerAlreadyReg.this, DashBoardWallet.class);
+                        startActivity(intent);
+                        finish();
+                    } else if(opStatus.equals("01")) {
+
+                        prgDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    else {
+
+                        prgDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    prgDialog.dismiss();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        private String insertOTPandMPIN() {
+            URL url = null;
+            String resp = "";
+            Log.d(TAG, " Test 1.0 ");
+            appPref.getInstance().Initialize(getApplicationContext());
+            userMobileNo = appPref.getInstance().getString("user_mobile");
+            try {
+
+                json = new JSONObject();
+                json.put("ACTION", "");
+                json.put("subActionId", "QRYSVAOTPPIN");
+                json.put("entityId", "QRYS");
+
+                jsonInner = new JSONObject();
+
+                jsonInner.put("entityId", "QRYS");
+                json.put("cbsType", cbsType);
+                jsonInner.put("MobileNo", userMobileNo);
+                jsonInner.put("MPIN", strMpin);
+                jsonInner.put("otpCode",strOtp);
+                json.put("map", jsonInner);
+                mwRequest = new MWRequest();
+                resp = mwRequest.middleWareReq(json);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return resp;
+        }
+    }
+    //RESEND OTP
+    private class ResendOTP extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... strings) {
+            String resp = ResendOTPService();
+            return resp;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            prgDialog = new ProgressDialog(CustomerAlreadyReg.this);
+            // Set Progress Dialog Text
+            prgDialog.setMessage("Please wait...");
+            // Set Cancelable as False
+            prgDialog.setCancelable(false);
+            prgDialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            if (s.equals("") || s == null) {
+                prgDialog.dismiss();
+                Toast.makeText(getApplicationContext(), "Unable to reach server", Toast.LENGTH_LONG).show();
+                return;
+            } else {
+                JSONObject mainObj = null;
+                try {
+                    mainObj = new JSONObject(s);
+                    respParams = mainObj.getString("responseParameter");
+                    JSONObject respObj = new JSONObject(respParams);
+                    opStatus = respObj.getString("opstatus");
+                    Log.d("opstatus", opStatus);
+                    result = respObj.getString("resstatus");
+                    Log.d("result", result);
+                    if (result != null) {
+                        if (opStatus.equals("00")) {
+                            prgDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "OTP sent to mobile.", Toast.LENGTH_SHORT).show();
+                            return;
+                        } else {
+                            prgDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "Please try again.", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                    }
+                    prgDialog.dismiss();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    //
+    private String ResendOTPService() {
+        String resp = "";
+        try {
+            Log.e(TAG,"ResendOTP "+userMobileNo+" "+deviceId);
+            json = new JSONObject();
+            json.put("ACTION", "");
+            json.put("subActionId", "QRYSRESENDOTP");
+            json.put("entityId", "QRYS");
+            jsonInner = new JSONObject();
+            jsonInner.put("entityId", "QRYS");
+            jsonInner.put("cbsType", cbsType);
+            jsonInner.put("DEVICE_BUILD", "1.0");
+            jsonInner.put("TYPE_OF_DEVICE", "ANDROID");
+            jsonInner.put("MobileNo", userMobileNo);
+            jsonInner.put("DeviceId", DeviceId);
+            json.put("map", jsonInner);
+            mwRequest = new MWRequest();
+            resp = mwRequest.middleWareReq(json);
+            System.out.println("resp " + resp);
+        } catch (Exception e) {
+        }
+        return resp;
+    }
+}

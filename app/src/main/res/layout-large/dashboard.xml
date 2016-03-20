@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+
+    tools:ignore="MissingPrefix">
+
+
+    <RelativeLayout
+        android:id="@+id/innerpart"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgshareqr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginTop="100dp"
+            android:src="@drawable/share_qr"
+            />
+
+        <ImageView
+            android:id="@+id/imgscanqr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scanqr"
+            android:layout_alignTop="@+id/imgshareqr"
+            android:layout_alignLeft="@+id/imgreqstmoney"
+            android:layout_alignStart="@+id/imgreqstmoney"/>
+
+
+        <ImageView
+            android:id="@+id/imgscannfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgshareqr"
+
+
+            android:layout_marginTop="100dp"
+            android:src="@drawable/nfctransfer"/>
+
+        <ImageView
+            android:id="@+id/imgreqstmoney"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgshareqr"
+            android:layout_below="@+id/imgscanqr"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/imgscannfc"
+            android:src="@drawable/requestmoney"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

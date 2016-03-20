@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextMobileNumber"
+        android:layout_alignBottom="@+id/editTextBenName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:hint="Mobile Number" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextBenName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:hint="Benificiary Name"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextAmount"
+        android:hint="Amount"
+        android:layout_below="@+id/editTextBenName"
+        android:layout_alignLeft="@+id/editTextBenName"
+        android:layout_alignStart="@+id/editTextBenName"
+        android:layout_marginTop="33dp" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Issued Date"
+        android:id="@+id/editTextIssuedDate"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/editTextAmount"
+        android:layout_alignLeft="@+id/editTextAmount"
+        android:layout_alignStart="@+id/editTextAmount"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:id="@+id/buttonProceed"
+        android:layout_below="@+id/editTextIssuedDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/ColorPrimary"
+        android:textSize="18dp"/>
+
+
+</RelativeLayout>

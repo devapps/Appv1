@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:background="@drawable/drawer_header_bg"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/editoption"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+       android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/edit"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#E7DEF0"
+            android:text="Sandeep Devhare"
+            android:textSize="16dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C9B3DF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:text="sandeep@gmail.com"
+            android:textSize="14dp"
+            android:textStyle="normal"
+
+            />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/agent_profilepicture"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:id="@+id/circleView"
+        />
+</RelativeLayout>

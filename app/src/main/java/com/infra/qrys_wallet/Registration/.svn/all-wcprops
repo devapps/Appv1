@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration
+END
+IndividualGetStarted.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration/IndividualGetStarted.java
+END
+IndividualBankList.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration/IndividualBankList.java
+END
+IndividualUserInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration/IndividualUserInfo.java
+END
+TypeOfUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration/TypeOfUser.java
+END
+RegisterMobileNo.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration/RegisterMobileNo.java
+END
+IndividualAccountDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Registration/IndividualAccountDetails.java
+END

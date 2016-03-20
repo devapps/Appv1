@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="statusMargin">0dp</dimen>
+    <dimen name="userSpace">116dp</dimen>
+    <dimen name="photoMarginTop">16dp</dimen>
+    <dimen name="tool_bar_top_padding">24dp</dimen>
+
+    <!-- match_parent = -1dp / wrap_content = -2dp -->
+    <dimen name="drawerWidth">-1dp</dimen>
+    <!--Tab View -->
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <!--Push Notification resources-->
+    <dimen name="font_regular">14sp</dimen>
+    <dimen name="message_padding_top">20dp</dimen>
+    <dimen name="message_padding_bottom">20dp</dimen>
+    <dimen name="message_padding_start">16dp</dimen>
+    <dimen name="message_padding_end">16dp</dimen>
+    <dimen name="message_line_spacing">6dp</dimen>
+
+    <!--Main DashBoard resources-->
+    <dimen name="card_view_width">150dp</dimen>
+    <dimen name="card_view_height">150dp</dimen>
+    <dimen name="text_view_height">50dp</dimen>
+    <dimen name="text_view_margin_top">40dp</dimen>
+    <dimen name="cardCornerRadius">2dp</dimen>
+    <dimen name="cardcontentPadding">10dp</dimen>
+    <dimen name="cardElevation">5dp</dimen>
+
+    <!--Cheque Services DashBoard resources-->
+    <dimen name="cheque_card_view_width">150dp</dimen>
+    <dimen name="cheque_card_view_height">70dp</dimen>
+    <dimen name="cheque_cardCornerRadius">2dp</dimen>
+    <dimen name="cheque_cardcontentPadding">10dp</dimen>
+    <dimen name="cheque_cardElevation">5dp</dimen>
+
+    <dimen name="CardView_width">150dp</dimen>
+    <dimen name="CardView_heigth">150dp</dimen>
+
+    <dimen name="CardViewmandate_width">300dp</dimen>
+    <dimen name="CardViewmandate_heigth">150dp</dimen>
+</resources>

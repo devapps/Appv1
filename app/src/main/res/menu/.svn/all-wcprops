@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/qrys/!svn/ver/275/trunk/trunk/QRys_Wallet/app/src/main/res/menu
+END
+menu_nfc_tag_read.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_nfc_tag_read.xml
+END
+menu_contacts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/275/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_contacts.xml
+END
+menu_customer_already_reg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_customer_already_reg.xml
+END
+menu_qrys_user_phone_book.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_qrys_user_phone_book.xml
+END
+menu_profile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_profile.xml
+END
+menu_individual_user_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_individual_user_info.xml
+END
+menu_type_of_user.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_type_of_user.xml
+END
+menu_share_qr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_share_qr.xml
+END
+menu_dash_board.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_dash_board.xml
+END
+menu_notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_notification.xml
+END
+menu_transaction_history.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_transaction_history.xml
+END
+menu_register_mobile_no.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_register_mobile_no.xml
+END
+menu_invite_friends.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_invite_friends.xml
+END
+menu_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/menu/menu_login.xml
+END

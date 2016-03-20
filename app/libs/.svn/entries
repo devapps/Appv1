@@ -1,0 +1,182 @@
+10
+
+dir
+313
+http://sezitl007v5.infraseepz.lan:81/svn/qrys/trunk/trunk/QRys_Wallet/app/libs
+http://sezitl007v5.infraseepz.lan:81/svn/qrys
+
+
+
+2015-11-30T11:15:40.089744Z
+241
+sandeep.devhare
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4f430926-67a8-6742-8e36-7a868f877849
+
+SecureComponent-release.aar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+android-async-http-1.4.4.jar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+guavalib.jar
+file
+
+
+
+
+2016-02-19T07:27:51.310034Z
+578ebd44b8b35b0a98b692b8c3ad5f89
+2015-11-30T11:15:40.089744Z
+241
+sandeep.devhare
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+704199
+
+leadtools.forms.ocr.jar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+leadtools.imageprocessing.color.jar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+leadtools.imageprocessing.core.jar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+leadtools.imageprocessing.effects.jar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+leadtoolsDemos-debug.aar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+leadtoolsDemos-release.aar
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DynamicsavingAccount"
+        android:text="123123123123123"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/ColorPrimary"
+        android:padding="15dp"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+      android:paddingLeft="15dp"
+        android:paddingBottom="20dp"
+        android:text="Saving account"
+        android:layout_marginRight="5dp"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/DynamicsavingAccount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ICIC99866678"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/ColorPrimary"
+        android:padding="15dp"
+        android:id="@+id/dynamicIFCS"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IFSC Code"
+        android:textSize="16dp"
+        android:paddingBottom="20dp"
+android:paddingRight="15dp"
+        android:layout_below="@+id/dynamicIFCS"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

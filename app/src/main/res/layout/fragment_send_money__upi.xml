@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.infra.qrys_wallet.Fragments_UPI.SendMoney_UPI">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Money"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="22dp"
+            android:id="@+id/textView16" />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:hint="From"
+
+            android:id="@+id/sendmoneyfromspinner"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstnameview"
+
+            android:layout_marginTop="50dp" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Toview"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="105dp">
+
+            <EditText
+                android:layout_width="190dp"
+                android:hint="Virtual Address"
+                android:textSize="16dp"
+
+
+                android:id="@+id/Toviewe"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/fromview"
+                android:layout_alignLeft="@+id/fromview"
+                android:layout_alignStart="@+id/fromview" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Amountview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="170dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:hint="Amount"
+                android:id="@+id/Amountviewe"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/fromview"
+                android:layout_alignLeft="@+id/fromview"
+                android:layout_alignStart="@+id/fromview" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Remarkview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="230dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:hint="Remark"
+                android:id="@+id/Remarkviewe"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/fromview"
+                android:layout_alignLeft="@+id/fromview"
+                android:layout_alignStart="@+id/fromview" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.inputmethodservice.ExtractEditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/extractEditTextDate"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginTop="305dp"
+            android:hint="Date" />
+
+
+        <android.inputmethodservice.ExtractEditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/extractEditText2Time"
+            android:hint="Time"
+android:layout_marginTop="20dp"
+            android:layout_below="@+id/extractEditTextDate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Spinner
+            android:id="@+id/spinnerFrequency"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            android:layout_below="@+id/extractEditText2Time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="490dp"
+   android:hint="Frequency"
+    android:id="@+id/frequency"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="550dp"
+            android:weightSum="1"
+            android:id="@+id/radioGroup"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+           >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Auth"
+                android:id="@+id/AuthID"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unauth"
+                android:id="@+id/UnAuthID"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:textSize="16dp"
+                android:layout_weight="0.13" />
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:layout_marginTop="650dp"
+            android:background="#4CAF50"
+            android:textColor="@color/white"
+            android:id="@+id/sendMoneyButton"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="QR"
+android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/buttonbackground"
+            android:id="@+id/QRbutton"
+            android:layout_alignTop="@+id/NFCbutton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="NFC"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/buttonbackground"
+android:layout_marginBottom="5dp"
+            android:id="@+id/NFCbutton"
+            android:layout_alignBottom="@+id/Toview"
+            android:layout_toLeftOf="@+id/QRbutton"
+            android:layout_toStartOf="@+id/QRbutton" />
+
+
+    </RelativeLayout>
+</ScrollView>

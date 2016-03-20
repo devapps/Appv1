@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/313/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet
+END
+SetMpin.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/SetMpin.java
+END
+ApplicationIntro.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/ApplicationIntro.java
+END
+DashBoardWallet.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/DashBoardWallet.java
+END
+MyCustomAnimation.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/MyCustomAnimation.java
+END
+CustomerAlreadyReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/CustomerAlreadyReg.java
+END
+OTP.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/272/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/OTP.java
+END
+MessagesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/MessagesActivity.java
+END
+Notification.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Notification.java
+END
+DashBoard.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/DashBoard.java
+END
+Login.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/qrys/!svn/ver/257/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Login.java
+END
+SmsBroadcastReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/SmsBroadcastReceiver.java
+END
+SplashScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/qrys/!svn/ver/313/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/SplashScreen.java
+END
+NFCTagReadActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/NFCTagReadActivity.java
+END
+QRysWalletApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/272/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/QRysWalletApplication.java
+END

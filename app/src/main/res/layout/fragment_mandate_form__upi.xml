@@ -1,0 +1,288 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infra.qrys_wallet.Fragments_UPI.MandateForm_UPI">
+
+    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.infra.qrys_wallet.Fragments_UPI.MandateForm_UPI">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandate Form"
+        android:id="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerPSP"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textView19"
+        />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerAccount"
+        android:layout_alignTop="@+id/spinnerPSP"
+
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the  Utility"
+        android:id="@+id/textView20"
+        android:textSize="20dp"
+        android:layout_above="@+id/spinnerAccount"
+        android:layout_alignLeft="@+id/spinnerPSP"
+        android:layout_alignStart="@+id/spinnerPSP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Address"
+        android:id="@+id/textView21"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_toRightOf="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Amountview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="200dp">
+
+        <EditText
+            android:layout_width="500dp"
+            android:hint="Amount"
+            android:inputType="number"
+            android:id="@+id/Amount"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_below="@+id/fromview"
+            android:layout_alignLeft="@+id/fromview"
+            android:layout_alignStart="@+id/fromview" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Forview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="250dp">
+
+        <EditText
+            android:layout_width="500dp"
+            android:inputType="number"
+            android:hint="For payment towards Consumer reference Number"
+            android:id="@+id/ForPaymentRefNumber"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_below="@+id/fromview"
+            android:layout_alignLeft="@+id/fromview"
+            android:layout_alignStart="@+id/fromview" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Schemeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="300dp">
+
+        <EditText
+            android:layout_width="500dp"
+            android:inputType="number"
+            android:hint="Scheme / Plan reference Number"
+            android:id="@+id/SchemePlanRefNumber"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_below="@+id/fromview"
+            android:layout_alignLeft="@+id/fromview"
+            android:layout_alignStart="@+id/fromview" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREQUENCY"
+        android:id="@+id/textViewFrequency"
+        android:layout_alignTop="@+id/StartingFromview"
+        android:layout_alignLeft="@+id/spinnerAccount"
+        android:layout_alignStart="@+id/spinnerAccount" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="400dp"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/textViewFrequency"
+        />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bi-Monthly"
+        android:id="@+id/checkBox2"
+        android:layout_marginLeft="400dp"
+        android:layout_below="@+id/checkBox"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quarterly"
+        android:layout_marginLeft="400dp"
+        android:id="@+id/checkBox3"
+        android:layout_below="@+id/checkBox2"
+       />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Half Quarterly"
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBox4"
+        android:layout_below="@+id/textViewFrequency"
+        android:layout_toRightOf="@+id/textViewFrequency"
+        android:layout_toEndOf="@+id/textViewFrequency" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yearly"
+        android:id="@+id/checkBox5"
+        android:layout_alignTop="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="as and when presented"
+        android:id="@+id/checkBox6"
+        android:checked="false"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PERIOD"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textViewPeriod"
+        android:layout_alignTop="@+id/StartingFromview"
+       />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/StartingFromview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="520dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:inputType="date"
+            android:hint="Staring From "
+            android:id="@+id/StartingFrom"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_below="@+id/fromview"
+            android:layout_alignLeft="@+id/fromview"
+            android:layout_alignStart="@+id/fromview" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Uptoview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="560dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:inputType="date"
+            android:hint="Upto"
+            android:id="@+id/Upto"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_below="@+id/fromview"
+            android:layout_alignLeft="@+id/fromview"
+            android:layout_alignStart="@+id/fromview" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/OrUntilCancelledview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="600dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:inputType="date"
+            android:hint="OR-Until Cancelled"
+            android:id="@+id/OrUntilCancelled"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_below="@+id/fromview"
+            android:layout_alignLeft="@+id/fromview"
+            android:layout_alignStart="@+id/fromview" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="700dp"
+        />
+
+
+
+</RelativeLayout>
+
+</ScrollView>

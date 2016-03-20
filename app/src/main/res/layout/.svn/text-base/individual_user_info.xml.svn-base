@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context="com.infra.qrys_wallet.Registration.IndividualUserInfo">
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#325A99"
+        >
+
+        <TextView
+            android:id="@+id/tvindividual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+
+            android:gravity="center_horizontal"
+            android:text="Individual"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/innersection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/firstnameview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edtfirstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+
+
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                android:textColor="#9c9c9c"
+                android:textSize="18dp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lastnameview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstnameview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/edtlastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+
+
+                android:hint="Last Name"
+                android:inputType="textCapWords"
+                android:textColor="#9c9c9c"
+                android:textSize="18dp"
+
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/useridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastnameview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/edtuserid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+
+
+                android:hint="User id"
+                android:inputType="textCapWords"
+                android:textColor="#9c9c9c"
+                android:textSize="18dp"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailidview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/useridview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/edtuseremailid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+
+
+                android:hint="Email id"
+                android:inputType="textEmailAddress"
+                android:textColor="#c5c5c5"
+                android:textSize="18dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btngonext"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/emailidview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/go_next"
+            android:gravity="center_horizontal"
+android:visibility="gone"
+            />
+        <ImageView
+
+            android:id="@+id/individualimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/individual"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

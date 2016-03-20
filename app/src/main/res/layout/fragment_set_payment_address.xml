@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infra.qrys_wallet.Fragments.SetPaymentAddressFragment">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Payment Address"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Payment Address is an unique Identifier which will be used while sending or receiving money instead of sharing Bank Account. "
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="This Payment address will be mapped to Bank Account "
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@+id/textView6"
+        android:id="@+id/textView11" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_marginTop="30dp"
+        android:hint="Virtual Address"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/paymentAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:text="Address should only contains a-z,A-Z,,0-9,.(dot),-(hyphen)"
+        android:gravity="center"
+        android:layout_below="@+id/paymentAddress"
+       />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="#d5d5d5"
+        android:textColor="@color/white"
+
+        android:id="@+id/cancelPaymentAddressButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="#4CAF50"
+        android:textColor="@color/white"
+
+        android:id="@+id/nextPaymentAddressButton"
+        android:layout_alignTop="@+id/cancelPaymentAddressButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

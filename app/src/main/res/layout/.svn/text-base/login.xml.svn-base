@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="start"
+                tools:context=".RegisterMobileNo"
+                tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/qrys_branding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+
+            android:padding="10dp"
+            android:src="@drawable/qrys_wallet_branding"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblsetmobileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Enter 4 Digit\nLogin MPIN Number."
+        android:textAlignment="center"
+        android:textSize="26dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtmpin"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblsetmobileno"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:height="48dp"
+
+            android:hint="MPIN"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textAlignment="center"
+
+
+            android:textColor="#606060"
+            android:textSize="30dp"
+
+            />
+
+    <TextView
+        android:id="@+id/lblforgotmpin"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/edtmpin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="Forgot MPIN"
+        android:textAlignment="center"
+
+        android:textColor="#005a99"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/btngonext"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/lblforgotmpin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/go_next"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

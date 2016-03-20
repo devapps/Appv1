@@ -1,0 +1,580 @@
+package com.infra.qrys_wallet.Fragments;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.StrictMode;
+import android.provider.MediaStore;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Base64;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.infra.qrys_wallet.Adapters.ListOfAddAccount_Adapter;
+import com.infra.qrys_wallet.DashBoardWallet;
+import com.infra.qrys_wallet.Models.AddAccounts;
+import com.infra.qrys_wallet.R;
+import com.infra.qrys_wallet.Utils.Constants;
+import com.infra.qrys_wallet.Utils.MWRequest;
+import com.infra.qrys_wallet.Utils.SharedPreference;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.ArrayList;
+/**
+ * Created by sandeep.devhare on 16-11-2015.
+ */
+public class Profile extends Fragment {
+
+    static Bitmap output;
+    public EditText AddAccountMMID, AddAccountAccountNo, AddAccountIFSC, NameofAccount, OTPAddAccount;
+    public String MMID_AddAccount, IFSC_AddAccount, AccountNo_AddAccount, AccountName_AddAccount, mobileNo, BankName, cBsType,OTP_AddAccount, AccountNumber;
+    ImageButton addAccount;
+    TextView ProfileName, ProfileMobileNo, ProfileEmailID, ProfileMMID;
+    String  UserFirstName, UserLastName, UserFullName, UserMMID, profile_Pic;
+    SharedPreference appPref;
+    JSONObject json, jsonInner;
+    com.infra.qrys_wallet.Utils.MWRequest mwRequest;
+    ArrayList<AddAccounts> items;
+    ListOfAddAccount_Adapter adapter;
+
+    ImageView profilePic;
+    Bitmap Profile_Pic;
+
+    String opStatus, result, respParams, data, AccountName;
+    private Toolbar toolbar;
+    private ListView lv;
+    private String TAG = "Profile";
+    String userAccountNo, shortBankName, cbsType, ifscCode, UserEmaiID, DeviceId, userMobileNo, custFullName,bankName;
+/*
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(false);
+    }
+*/
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        DashBoardWallet.fragmentID=1;
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Profile");
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+
+        View rootView = inflater.inflate(R.layout.profile, container, false);
+
+       // toolbar = (Toolbar)rootView. findViewById(R.id.tool_bar);
+       // ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+
+        appPref.getInstance().Initialize(this.getActivity().getApplicationContext());
+        userAccountNo = appPref.getInstance().getString("SharedAccountNo");
+        shortBankName = appPref.getInstance().getString("selectedBankDescription");
+        cbsType = appPref.getInstance().getString("cBsType");
+        DeviceId = appPref.getInstance().getString("Device_Id");
+        userMobileNo = appPref.getInstance().getString("user_mobile");
+        bankName =   appPref.getInstance().getString("selectedBankName");
+
+        UserMMID = appPref.getInstance().getString("SharedMMID");
+        ifscCode = appPref.getInstance().getString("SharedIFSC");
+        UserFirstName = appPref.getInstance().getString("fName");
+        UserLastName = appPref.getInstance().getString("lName");
+        custFullName = appPref.getInstance().getString("CustFull_Name");
+        UserEmaiID = appPref.getInstance().getString("emailID");
+        System.out.println("SharedPreference Details In Profile Fragment \n" + userMobileNo + " " + DeviceId + " " + shortBankName + " \n" + cbsType + " " + userAccountNo + " " + UserMMID + "\n " + ifscCode+" "+UserFirstName+" "+UserLastName+" \n "+custFullName+" "+bankName+" "+UserEmaiID);
+
+
+        ProfileName = (TextView) rootView.findViewById(R.id.ProfileName);
+        ProfileMobileNo = (TextView) rootView.findViewById(R.id.ProfileMobileNo);
+        ProfileEmailID = (TextView) rootView.findViewById(R.id.ProfileEmail);
+        ProfileMMID = (TextView) rootView.findViewById(R.id.ProfileMMID);
+        profilePic = (ImageView) rootView.findViewById(R.id.imgprofile);
+        //profilePic.setImageResource(R.drawable.profile_pic);
+        System.out.println("UserMobileNo " + userMobileNo);
+        ProfileMobileNo.setText(userMobileNo);
+
+        System.out.println("UserMobileNo " + UserFullName);
+        if(custFullName!=null)
+        {
+            ProfileName.setText(custFullName);
+        }else
+        {
+            ProfileName.setText(UserFirstName+ " " + UserLastName);
+        }
+
+
+
+        if(ifscCode!=null && UserMMID!=null)
+        {
+            ProfileMMID.setText(UserMMID+"/"+ifscCode);
+
+        }else if(UserMMID!=null)
+        {
+            ProfileMMID.setText(UserMMID);
+        }else
+        {
+            ProfileMMID.setText(ifscCode);
+        }
+
+
+        ProfileEmailID.setText(UserEmaiID);
+
+       profile_Pic = appPref.getInstance().getString("Profile_pic");
+        if (profile_Pic != null) {
+            Profile_Pic = decodeBase64(profile_Pic);
+            if(Profile_Pic!=null)
+            {
+                profilePic.setImageBitmap(Profile_Pic);
+            }else {
+                Profile_Pic = BitmapFactory.decodeResource(this.getResources(),
+                        R.drawable.profile_pic);
+            }
+
+        } else {
+            Profile_Pic = BitmapFactory.decodeResource(this.getResources(),
+                    R.drawable.profile_pic);
+        }
+
+        profilePic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectImage();
+            }
+        });
+        return rootView;
+    }
+
+//
+private String requestAddDialogAccount() {
+    System.out.println("AccountNO " + AccountNo_AddAccount);
+    System.out.println("IFSC " + IFSC_AddAccount);
+    String resp = "";
+    try {
+        json = new JSONObject();
+        json.put("ACTION", "");
+        json.put("subActionId", "QRYSACCOUTMOBVER");
+        json.put("entityId", "QRYS");
+        jsonInner = new JSONObject();
+        jsonInner.put("entityId", "QRYS");
+        jsonInner.put("cbsType", cbsType);
+        //jsonInner.put("cbsType", cBsType);
+        jsonInner.put("DEVICE_BUILD", "1");
+        jsonInner.put("TYPE_OF_DEVICE", "ANDROID");
+        jsonInner.put("QrysSelBank", bankName);
+        jsonInner.put("DeviceId", DeviceId);
+        jsonInner.put("MobileNo", userMobileNo);
+        jsonInner.put("ifsc_code", IFSC_AddAccount);
+        jsonInner.put("accountno", AccountNo_AddAccount);
+        json.put("map", jsonInner);
+        mwRequest = new MWRequest();
+        resp = mwRequest.middleWareReq(json);
+        System.out.println("resp for add account in dialog" + resp);
+    } catch (Exception e) {
+    }
+    return resp;
+    // return null;
+}
+
+    private String AddAccountotpvalidation() {
+        System.out.println("inside AddOTP");
+        String resp = "";
+        try {
+            String OTP = OTPAddAccount.getText().toString();
+            System.out.println("show OTP " + OTP);
+            //  String MobileNo = com.infra.qrys.Utils.DataHolderClass.getInstance().getUserMobileNo();
+            json = new JSONObject();
+            json.put("ACTION", "");
+            json.put("subActionId", "QRYSVALOTP");
+            json.put("entityId", "QRYS");
+            jsonInner = new JSONObject();
+            jsonInner.put("entityId", "QRYS");
+            jsonInner.put("cbsType", cbsType);
+            jsonInner.put("DEVICE_BUILD", "1.0");
+            jsonInner.put("TYPE_OF_DEVICE", "ANDROID");
+            jsonInner.put("MobileNo", userMobileNo);
+            jsonInner.put("accountno", AccountNo_AddAccount);
+            jsonInner.put("otpCode", OTP);
+            json.put("map", jsonInner);
+            mwRequest = new com.infra.qrys_wallet.Utils.MWRequest();
+            resp = mwRequest.middleWareReq(json);
+            System.out.println("resp for OTP Add Account " + resp);
+        } catch (Exception e) {
+        }
+        return resp;
+    }
+
+    private String AccountSync() {
+        System.out.println("inside AccountSync" + userMobileNo);
+        String resp = "";
+        try {
+            //  String MobileNo = com.infra.qrys.Utils.DataHolderClass.getInstance().getUserMobileNo();
+            json = new JSONObject();
+            json.put("ACTION", "");
+            json.put("subActionId", "QRYSREGACCOUNTSDET");
+            json.put("entityId", "QRYS");
+            jsonInner = new JSONObject();
+            jsonInner.put("entityId", "QRYS");
+            jsonInner.put("cbsType", cbsType);
+            jsonInner.put("DEVICE_BUILD", "1.0");
+            jsonInner.put("TYPE_OF_DEVICE", "ANDROID");
+            jsonInner.put("MobileNo", userMobileNo);
+            json.put("map", jsonInner);
+            mwRequest = new MWRequest();
+            resp = mwRequest.middleWareReq(json);
+            System.out.println("resp for sync Accounts " + resp);
+        } catch (Exception e) {
+        }
+        return resp;
+    }
+
+
+    private void Dialog() {
+        Button bproceed;
+        final Dialog dialog = new Dialog(Profile.this.getActivity());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.addaccount_customdialog);
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
+        dialog.getWindow().setAttributes(lp);
+        dialog.findViewById(R.id.btncancel).setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+        dialog.findViewById(R.id.otpok).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AddAccountMMID = (EditText) dialog.findViewById(R.id.AddAccountMMID);
+                AddAccountAccountNo = (EditText) dialog.findViewById(R.id.AddAccountAccountNo);
+                AddAccountIFSC = (EditText) dialog.findViewById(R.id.AddAccountIFSC);
+                NameofAccount = (EditText) dialog.findViewById(R.id.AddAccountNameofAccount);
+                System.out.println("AddAccountAccountNo id" + AddAccountAccountNo);
+                MMID_AddAccount = AddAccountMMID.getText().toString();
+                IFSC_AddAccount = AddAccountIFSC.getText().toString();
+                AccountNo_AddAccount = AddAccountAccountNo.getText().toString();
+                AccountName_AddAccount = NameofAccount.getText().toString();
+                System.out.println("AddAccountAccountNo value" + AccountNo_AddAccount);
+                System.out.println("dialog button clicked");
+                new addDialogAccount().execute();
+                System.out.println("after dialog button clicked");
+                dialog.dismiss();
+
+            }
+        });
+        dialog.show();
+    }
+
+    // method for base64 to bitmap
+    public static Bitmap decodeBase64(String input) {
+        byte[] decodedByte = Base64.decode(input, 0);
+        return BitmapFactory
+                .decodeByteArray(decodedByte, 0, decodedByte.length);
+    }
+
+    private void selectImage() {
+        final CharSequence[] options = {"Take Photo", "Choose from Gallery",
+                "Cancel"};
+        AlertDialog.Builder builder = new AlertDialog.Builder(
+                Profile.this.getActivity());
+        builder.setTitle("Add Photo!");
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int item) {
+                if (options[item].equals("Take Photo")) {
+                    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    File f = new File(android.os.Environment
+                            .getExternalStorageDirectory(), "temp.jpg");
+                    intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(f));
+                    Log.e(Profile.class.getName(),"Image Capture");
+                    startActivityForResult(intent, 1);
+                } else if (options[item].equals("Choose from Gallery")) {
+                    Intent intent = new Intent(
+                            Intent.ACTION_PICK,
+                            android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, 2);
+                } else if (options[item].equals("Cancel")) {
+                    dialog.dismiss();
+                }
+            }
+        });
+        builder.show();
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == 1) {
+                Log.e(Profile.class.getName(),"Image Capture Result");
+                // appPref.getInstance().setString("Profile_pic",null);
+                File f = new File(Environment.getExternalStorageDirectory()
+                        .toString());
+                for (File temp : f.listFiles()) {
+                    if (temp.getName().equals("temp.jpg")) {
+                        f = temp;
+                        break;
+                    }
+                }
+                try {
+                    Bitmap bitmap;
+                    BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
+                    bitmap = BitmapFactory.decodeFile(f.getAbsolutePath(),
+                            bitmapOptions);
+                    Log.e(Profile.class.getName(),"Image Capture Result 2");
+                    bitmap = getCircularBitmap(bitmap);
+                    //Pass your bitmap inside this method like something in your preference-
+                    Log.e(Profile.class.getName(),"Image Capture Result 3");
+
+                    profile_Pic = encodeTobase64(bitmap);
+                    Log.e(Profile.class.getName(),"Image Capture Result 4");
+                    Log.e("Image Data " + profile_Pic, " ");
+                    appPref.getInstance().setString("Profile_pic", encodeTobase64(bitmap));
+                    profilePic.setImageBitmap(bitmap);
+                    Constants.checkImage = true;
+                    String path = android.os.Environment
+                            .getExternalStorageDirectory()
+                            + File.separator
+                            + "Phoenix" + File.separator + "default";
+                    f.delete();
+                    OutputStream outFile = null;
+                    File file = new File(path, String.valueOf(System
+                            .currentTimeMillis()) + ".jpg");
+                    try {
+                        outFile = new FileOutputStream(file);
+                        bitmap.compress(Bitmap.CompressFormat.JPEG, 85, outFile);
+                        outFile.flush();
+                        outFile.close();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else if (requestCode == 2) {
+                Uri selectedImage = data.getData();
+                String[] filePath = {MediaStore.Images.Media.DATA};
+                Cursor c = getActivity().getContentResolver().query(selectedImage, filePath,
+                        null, null, null);
+                c.moveToFirst();
+                int columnIndex = c.getColumnIndex(filePath[0]);
+                String picturePath = c.getString(columnIndex);
+                c.close();
+                Bitmap thumbnail = (BitmapFactory.decodeFile(picturePath));
+
+                Log.w("path of image", picturePath+" ");
+                thumbnail = getCircularBitmap(thumbnail);
+                profile_Pic = encodeTobase64(thumbnail);
+                Log.e(Profile.class.getName(),"Image Capture Result 4");
+                Log.e("Image Data " + profile_Pic, " ");
+                appPref.getInstance().setString("Profile_pic", encodeTobase64(thumbnail));
+                profilePic.setImageBitmap(thumbnail);
+                Constants.checkImage = true;
+
+            }
+        }
+    }
+
+    private void OTPDialog() {
+        Button bproceed;
+        final Dialog dialog = new Dialog(Profile.this.getActivity());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.otp_customdialog);
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
+        dialog.getWindow().setAttributes(lp);
+        OTPAddAccount = (EditText) dialog.findViewById(R.id.otpforaddaccount);
+        dialog.findViewById(R.id.otpcancel).setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+        dialog.findViewById(R.id.otpok).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("dialog button clicked");
+                new AddAccountOtp().execute();
+                System.out.println("after dialog button clicked");
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
+    public static Bitmap getCircularBitmap(Bitmap bitmap) {
+        if (bitmap.getWidth() > bitmap.getHeight()) {
+            // output.recycle();
+            output = Bitmap.createBitmap(bitmap.getHeight(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
+        } else {
+            // output.recycle();
+            output = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getWidth(), Bitmap.Config.ARGB_8888);
+        }
+        Canvas canvas = new Canvas(output);
+        final int color = 0xff424242;
+        final Paint paint = new Paint();
+        final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+        float r = 0;
+        if (bitmap.getWidth() > bitmap.getHeight()) {
+            r = bitmap.getHeight() / 2;
+        } else {
+            r = bitmap.getWidth() / 2;
+        }
+        paint.setAntiAlias(true);
+        canvas.drawARGB(0, 0, 0, 0);
+        paint.setColor(color);
+        canvas.drawCircle(r, r, r, paint);
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+        canvas.drawBitmap(bitmap, rect, rect, paint);
+        return output;
+    }
+
+    // method for bitmap to base64
+    public static String encodeTobase64(Bitmap image) {
+        Bitmap immage = image;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        immage.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] b = baos.toByteArray();
+        String imageEncoded = Base64.encodeToString(b, Base64.DEFAULT);
+        Log.d("Image Log:", imageEncoded);
+        return imageEncoded;
+    }
+
+    private class addDialogAccount extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... strings) {
+            String resp = requestAddDialogAccount();
+            return resp;
+        }
+    }
+
+    private class AddAccountOtp extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... strings) {
+            String resp = AddAccountotpvalidation();
+            return resp;
+        }
+    }
+
+    private class SyncAccounts extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... strings) {
+            String SyncAccountResponse = AccountSync();
+            return SyncAccountResponse;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            Log.d(TAG, " Test 2 " + s);
+            if (s.equals("") || s == null) {
+                // Toast.makeText(getApplicationContext(), "Unable to reach server", Toast.LENGTH_LONG).show();
+                return;
+            } else {
+                //  prgDialog.dismiss();
+                Log.d(TAG, " Test 2.0 ");
+                JSONObject mainObj = null;
+                try {
+                    mainObj = new JSONObject(s);
+                    respParams = mainObj.getString("set");
+                    Log.d(TAG, " respParams " + respParams);
+                    JSONObject respObj = new JSONObject(respParams);
+                    String firstNode = respObj.getString("setname");
+                    String secondNode = respObj.getString("records");
+                    Log.d(TAG, " setName " + firstNode);
+                    Log.d(TAG, " records " + secondNode);
+                    String resp = mainObj.getString("responseParameterMW");
+                    JSONObject respObjforstatus = new JSONObject(resp);
+                    opStatus = respObjforstatus.getString("opstatus");
+                    Log.d("opstatus", opStatus);
+                    result = respObjforstatus.getString("resstatus");
+                    Log.d("result", result);
+                    String totallist = respObjforstatus.getString("totalListCount");
+                    Log.d("totallist", totallist);
+                    int l = Integer.parseInt(totallist);
+                    Log.d("length", " " + l);
+
+
+                    /*Read All Bank Names and */
+                    //Get the instance of JSONArray that contains JSONObjects
+                    JSONArray jsonArray = respObj.optJSONArray("records");
+                    System.out.println(" jsonArray.length() " + jsonArray.length());
+                    //Iterate the jsonArray and print the info of JSONObjects
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                        AccountName = jsonObject.getString("customerName");
+                        AccountNumber = jsonObject.getString("accountno");
+                        BankName = jsonObject.getString("bankName");
+                          cBsType = jsonObject.getString("cbsType");
+                        //  Nbin  = Integer.parseInt(jsonObject.optString("nbin").toString());
+                        data = "Node" + i + " : \n BName= " + BankName + " \n AccountNumber= " + AccountNumber + "\n AccountName " + AccountName + "\n cbsType" + cBsType;
+                        Log.d("Data", " " + data);
+                        items.add(new AddAccounts(AccountName, BankName, AccountNumber));
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                //prgDialog.dismiss();
+                if (opStatus.equals("00")) {
+                    System.out.println("Items LOG " + items);
+                    adapter = new ListOfAddAccount_Adapter(Profile.this.getActivity(), items);
+                    lv.setAdapter(adapter);
+                }
+                //  prgDialog.dismiss();
+            }
+            //  prgDialog.dismiss();
+        }
+    }
+
+
+}

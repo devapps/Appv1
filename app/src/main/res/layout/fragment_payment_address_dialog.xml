@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tvlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20px"
+        android:padding="5px"
+        android:text="Please set your payment address to initiate fund transfer."
+        android:textColor="#000000"
+
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/tvbankselected"
+        />
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="59dp">
+
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:text="Later"
+
+
+        android:textColor="#a7a7a7"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/now"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+
+
+        android:text="Now"
+        android:textColor="#4C6FA5"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/btncancel" />
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

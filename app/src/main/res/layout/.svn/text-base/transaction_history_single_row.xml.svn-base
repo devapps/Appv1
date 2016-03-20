@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#FAFAFA"
+                android:orientation="horizontal"
+
+                android:padding="5dip"
+                android:id="@+id/item_row">
+    <!-- Left side -->
+    <LinearLayout
+        android:id="@+id/leftside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dip" >
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#2B72A6"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="15"/>
+        <TextView
+            android:id="@+id/tvmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#C9C9C9"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:maxLength="3"
+            android:textSize="18dp"
+            android:text="SEP"/>
+        <TextView
+            android:id="@+id/tvyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp"
+            android:textColor="#C9C9C9"
+            android:text="2015"/>
+    </LinearLayout>
+    <!-- Right end side -->
+
+    <LinearLayout
+        android:id="@+id/rightside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="3dip" >
+    <TextView
+        android:id="@+id/tvammount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#2DBD86"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="300"/>
+        <TextView
+            android:id="@+id/lblammount"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+android:layout_marginTop="10dp"
+
+            android:textSize="14dp"
+            android:textColor="#C9C9C9"
+            android:textStyle="bold"
+            android:text="₹"/>
+        <ImageView
+            android:id="@+id/imgstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/addnew" />
+    </LinearLayout>
+    <!-- innerside-->
+    <TextView
+        android:id="@+id/tvmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+        android:layout_marginLeft="75dip"
+        android:layout_centerVertical="true"
+        android:paddingBottom ="10dip"
+        android:text="Deepak Rajpal"
+        android:textColor="#999999"
+        android:textSize="16dip"
+
+        android:maxLines="4"
+        android:minLines="2"
+      android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/tvremark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tvmsg"
+        android:layout_alignLeft="@+id/tvmsg"
+        android:layout_marginTop="20dip"
+        android:layout_centerHorizontal="true"
+        android:text="remark"
+        android:textColor="#C4C4C4"
+        android:textSize="15dip" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="200dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="200dp"
+    android:background="#ffffff"
+    android:padding="0dp"
+    >
+
+
+    <TextView
+        android:id="@+id/tvbankselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="40dp"
+
+
+        android:text=""
+        android:textColor="#a7a7a7"
+
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvbankselected"
+
+        android:layout_marginLeft="20px"
+        android:padding="5px"
+        android:text="now you would be able to send and receive money."
+        android:textColor="#a7a7a7"
+
+        android:textSize="18dp"
+        android:textStyle="normal"/>
+
+
+    <TextView
+        android:id="@+id/tvconfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+
+        android:background="#005A99"
+        android:padding="5px"
+        android:text="Confirmation "
+        android:textColor="#EDF6F6"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tvlastname"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:text="Cancel"
+
+
+        android:textColor="#a7a7a7"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/otpok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvlastname"
+
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+
+
+        android:text="Ok"
+        android:textColor="#4C6FA5"
+        android:textSize="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#005A99"
+              android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#005A98"
+        >
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/backarrow"
+            />
+
+        <TextView
+            android:id="@+id/txtShareQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+
+            android:padding="15dp"
+
+
+            android:text="NFC details"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="9"
+        android:background="#005A99"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:background="@android:color/white">
+
+
+            <TextView
+                android:id="@+id/tvqrscandetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+
+                android:text="Got it !"
+                android:textColor="#448AFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtlblbeneficiaryname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvqrscandetails"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/edtbeneficiaryname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:height="48dp"
+                    android:editable="false"
+                    android:hint=""
+                    android:textColor="#9c9c9c"
+                    android:textSize="18dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtlblproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtlblbeneficiaryname"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/edtproduct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:height="48dp"
+                    android:editable="false"
+                    android:hint=""
+                    android:textColor="#9c9c9c"
+                    android:textSize="18dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#005A99"
+            >
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@android:color/white"
+
+            >
+
+            <TextView
+                android:id="@+id/tvrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="75dp"
+
+
+                android:text="₹"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtlblamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <EditText
+                    android:id="@+id/edtamount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+
+                    android:height="48dp"
+
+android:text=""
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+
+                    android:textColor="#07B371"
+                    android:textSize="35dp"
+                    android:textStyle="normal"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtlblremark"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/edtlblamount"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/edtremark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    android:height="48dp"
+                    android:hint="Remark"
+
+
+                    android:textColor="#BFBFBF"
+                    android:textSize="24dp"
+                    android:textStyle="normal"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/rescan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#a7a7a7"
+            android:text="Rescan"/>
+
+        <Button
+            android:id="@+id/confirm"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#1DE9B6"
+            android:text="Confirm"/>
+    </LinearLayout>
+</LinearLayout>

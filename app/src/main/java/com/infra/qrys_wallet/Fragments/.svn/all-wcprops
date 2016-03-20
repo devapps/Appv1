@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments
+END
+ContactsRequestMoney.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/ContactsRequestMoney.java
+END
+Profile.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/Profile.java
+END
+ContactsSendMoney.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/ContactsSendMoney.java
+END
+QRysUserPhoneBook.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/QRysUserPhoneBook.java
+END
+ShareQR.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/ShareQR.java
+END
+ContactsForRequestMoney.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/ContactsForRequestMoney.java
+END
+TransactionHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/TransactionHistory.java
+END
+InviteFriends.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/InviteFriends.java
+END
+ChangeMPIN.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/ChangeMPIN.java
+END
+mWalletOffers.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/mWalletOffers.java
+END
+DashBoardFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/DashBoardFragment.java
+END
+LoadFromWallet.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/qrys/!svn/ver/255/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/LoadFromWallet.java
+END
+ContactsSendMoneyReceipt.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/ContactsSendMoneyReceipt.java
+END
+Contacts.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/Contacts.java
+END
+LoadFromAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/255/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/LoadFromAccount.java
+END
+NFCsplashScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/NFCsplashScreen.java
+END
+LoadDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/LoadDialogFragment.java
+END
+Phonebook.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/275/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/Phonebook.java
+END
+QRysUserSendMoneyPhoneBook.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/QRysUserSendMoneyPhoneBook.java
+END
+SendMoneyFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/SendMoneyFragment.java
+END
+Wallet.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/275/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/Wallet.java
+END
+RequestDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/RequestDialogFragment.java
+END
+SendDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/SendDialogFragment.java
+END
+mWalletOffersDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/mWalletOffersDetail.java
+END
+NfcTagRead.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/255/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments/NfcTagRead.java
+END

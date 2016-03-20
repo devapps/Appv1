@@ -1,0 +1,8 @@
+{
+  "pushServerURL": "http://172.25.1.203:8580/ag-push/",
+  "android": {
+    "senderID": "949081580547",
+    "variantID": "ab3b204b-5fa1-4461-a393-de2f5d23c60c",
+    "variantSecret": "827b9f51-3138-4fef-9359-0b260f69f12d"
+  }
+}

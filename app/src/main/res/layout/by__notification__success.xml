@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/tick"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="Done !"
+        android:textColor="#6DBD70"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/done"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your amount has been transfered Successfully"
+        android:textAlignment="center"
+        android:textColor="#868686"
+        android:textSize="18dp"
+        android:textStyle="normal"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView23"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/transactionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Transaction ID: "
+
+            android:textAlignment="center"
+            android:textColor="#868686"
+
+            android:textSize="18dp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/idinnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/transactionId"
+            android:layout_below="@+id/transactionId"
+            android:layout_toRightOf="@+id/transactionId"
+            android:padding="10dp"
+            android:text=" "
+            android:textColor="#868686"
+            android:textSize="19dp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#4CAF50"
+        android:text="HOME"
+        android:textColor="@color/white"
+        android:textSize="22dp"/>
+
+</RelativeLayout>

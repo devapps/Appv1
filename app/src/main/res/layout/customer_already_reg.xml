@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+
+    android:layout_height="match_parent"
+
+    tools:ignore="MissingPrefix">
+
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <!--This is for logo on right side-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sections"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblsetmobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:gravity="center_horizontal"
+            android:text="@string/lblinstructionotp"
+            android:textAlignment="center"
+            android:textSize="24dp"/>
+
+
+        <EditText
+            android:id="@+id/otpforaddaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblsetmobileno"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:hint="OTP"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textAlignment="center"
+            android:textColor="#B3B3B3"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otpforaddaccount"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="@string/otpinstruction"
+            android:textAlignment="center"
+            android:textColor="#c5c5c5"
+            android:textSize="12dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvresend"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="Resend OTP"
+            android:textAlignment="center"
+            android:textColor="#005a99"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/lblsetmpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvresend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Enter 4 Digit\nLogin MPIN Number."
+            android:textAlignment="center"
+            android:textSize="24dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtmpin"
+
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/lblsetmpin"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
+
+            android:hint="MPIN"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textAlignment="center"
+
+
+            android:textColor="#606060"
+            android:textSize="28dp"
+
+            />
+
+        <TextView
+            android:id="@+id/lblforgotmpin"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/edtmpin"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:text="Forgot MPIN"
+            android:textAlignment="center"
+
+            android:textColor="#005a99"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btngonext"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/lblforgotmpin"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/go_next"
+            android:gravity="bottom"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

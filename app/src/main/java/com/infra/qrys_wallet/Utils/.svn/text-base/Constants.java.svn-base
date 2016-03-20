@@ -1,0 +1,13 @@
+package com.infra.qrys_wallet.Utils;
+
+public class Constants {
+    public static String TYPE_OF_READ;
+    //  public static String URL = "http://172.25.1.203:8080/MobilityMiddleWare/middleware?inputData=";//For Internal Testing
+//   public static String URL = "http://172.25.1.203:3535/MobilityMiddleWare/middleware?inputData=";//For Internal Testing
+   public static String URL = "http://180.92.165.203:9091/MobilityMiddleWare/middleware?inputData=";//For Public Testing
+ //   public static String URL = "http://172.25.1.55:9797/MobilityMiddleWare/middleware?inputData=";//Local on Mahendars System
+    //  public static String URL = "http://180.92.165.205:4040/MobilityMiddleWare/middleware?inputData=";//UAT
+    //public static String URL = "http://172.25.2.116:9797/MobilityMiddleWare/middleware?inputData=";
+    public static boolean checkImage = false;
+    public static boolean checkSQLiteInserted = false;
+}

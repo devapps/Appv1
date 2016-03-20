@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+
+      tools:context="com.infra.qrys_wallet.Fragments.Contacts">
+      <!-- SEARCH -->
+
+
+    <!--<item android:id="@+id/action_search"
+          android:title="search"
+          android:icon="@android:drawable/ic_menu_search"
+          myapp:showAsAction="ifRoom|collapseActionView"
+          myapp:actionViewClass="android.support.v7.widget.SearchView" />-->
+      <item android:id="@+id/action_sync"
+            android:title="refresh"
+            android:icon="@drawable/ic_sync"
+            app:showAsAction="ifRoom"
+            android:alphabeticShortcut="r"
+            android:orderInCategory="300"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+
+      <item
+          android:id="@+id/menu_item_search"
+          android:actionViewClass="android.widget.SearchView"
+          android:icon="@android:drawable/ic_menu_search"
+          app:showAsAction="always"
+          android:title="search">
+      </item>
+</menu>

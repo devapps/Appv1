@@ -1,0 +1,297 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f7f7"
+    tools:context="com.infra.qrys_wallet.Fragments_UPI.Wallet_UPI">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/paymentaddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Address"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="114dp"/>
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignTop="@+id/card_view1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chequeupi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Payment"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="114dp"/>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--Edited by vaibhav starts-->
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_alignTop="@+id/card_view4"
+        android:layout_alignLeft="@+id/card_view2"
+        android:layout_alignStart="@+id/card_view2">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/receivemoneyupi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Cheque"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="113dp"/>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_below="@+id/card_view1"
+        android:layout_alignLeft="@+id/card_view1"
+        android:layout_alignStart="@+id/card_view1"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sendmoney_upihakcthon"/>
+        <TextView
+            android:id="@+id/textCreateVAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Virtual\n     Address"
+            android:textSize="14dp"
+
+            android:layout_marginTop="113dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+           />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view5"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_below="@+id/card_view4"
+        android:layout_alignLeft="@+id/card_view1"
+        android:layout_alignStart="@+id/card_view1"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sendmoney_upihakcthon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheque Status"
+            android:textSize="14dp"
+
+            android:layout_marginTop="113dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view6"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_alignTop="@+id/card_view5"
+        android:layout_alignLeft="@+id/card_view3"
+        android:layout_alignStart="@+id/card_view3">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/receivemoneyupi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Money via\n\t\t\tCheque"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="113dp"/>
+
+    </android.support.v7.widget.CardView>-->
+    <!--Edited by vaibhav ends-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_alignTop="@+id/card_view4"
+        android:layout_alignLeft="@+id/card_view2"
+        android:layout_alignStart="@+id/card_view2">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/receivemoneyupi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheque Services"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="113dp"/>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="@dimen/CardView_width"
+        android:layout_height="@dimen/CardView_heigth"
+        card_view:cardCornerRadius="2dp"
+
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_below="@+id/card_view1"
+        android:layout_alignLeft="@+id/card_view1"
+        android:layout_alignStart="@+id/card_view1"
+        android:layout_marginTop="49dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sendmoney_upihakcthon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insta Pay"
+            android:textSize="14dp"
+
+            android:layout_marginTop="113dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            />
+
+    </android.support.v7.widget.CardView>
+    <!--<Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Cheque Services"
+        android:textSize="22dp"
+        android:id="@+id/upiTesting"
+        android:background="@drawable/buttonbackground"
+        android:layout_below="@+id/card_view3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />-->
+
+</RelativeLayout>

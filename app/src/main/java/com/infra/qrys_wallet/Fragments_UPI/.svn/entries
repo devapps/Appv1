@@ -1,0 +1,182 @@
+10
+
+dir
+0
+http://sezitl007v5.infraseepz.lan:81/svn/qrys/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Fragments_UPI
+http://sezitl007v5.infraseepz.lan:81/svn/qrys
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4f430926-67a8-6742-8e36-7a868f877849
+
+AccountMappedSetTPIN.java
+file
+
+
+
+add
+
+ChequeData.java
+file
+
+
+
+add
+
+ChequeServicesDashBoard.java
+file
+
+
+
+add
+
+ChequeStatus.java
+file
+
+
+
+add
+
+CommanLibrary_UPI.java
+file
+
+
+
+add
+
+ConfirmTPIN.java
+file
+
+
+
+add
+
+CreateVirtualAddress_UPI.java
+file
+
+
+
+add
+
+Fragment_RecieveMoney_Cheque_Data_Upi.java
+file
+
+
+
+add
+
+GetVirtualAddresslist.java
+file
+
+
+
+add
+
+Insta_Pay.java
+file
+
+
+
+add
+
+MICR_Scanner.java
+file
+
+
+
+add
+
+MandateForm_UPI.java
+file
+
+
+
+add
+
+ReceiveMoneyviaCheque.java
+file
+
+
+
+add
+
+SendMoney_UPI.java
+file
+
+
+
+add
+
+SetTpinFragment.java
+file
+
+
+
+add
+
+StopCheque.java
+file
+
+
+
+add
+
+SuccessfullTPIN.java
+file
+
+
+
+add
+
+UPI_OTP.java
+file
+
+
+
+add
+
+UPI_SelectedBankAccount.java
+file
+
+
+
+add
+
+UPI_SetTpin.java
+file
+
+
+
+add
+
+UPI_Testing.java
+file
+
+
+
+add
+
+Wallet_UPI.java
+file
+
+
+
+add
+

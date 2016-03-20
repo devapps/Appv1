@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAFAFA"
+
+    android:orientation="horizontal"
+    android:padding="5dip">
+    <!-- Left side -->
+    <LinearLayout
+        android:id="@+id/leftside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgOffer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/dealplaceholder" />
+    </LinearLayout>
+    <!-- Right end side -->
+
+
+    <!-- innerside-->
+    <TextView
+        android:id="@+id/offerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="95dip"
+        android:layout_marginTop="5dp"
+        android:maxLines="4"
+        android:minLines="1"
+        android:text="Deepak Rajpal"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/offerDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/offerName"
+        android:layout_below="@+id/offerName"
+        android:layout_centerHorizontal="true"
+        android:text="remark"
+        android:maxLines="4"
+        android:minLines="1"
+        android:textColor="#C4C4C4"
+        android:textSize="15dip" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+package com.infra.qrys_wallet.Utils;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+
+/**
+ * Created by sandeep.devhare on 11-10-2015.
+ */
+
+public class SharedPreference
+{
+    private static SharedPreference mInstance;
+    private Context mContext;
+    //
+    private SharedPreferences mMyPreferences;
+
+    private SharedPreference(){ }
+
+    public static SharedPreference getInstance(){
+        if (mInstance == null) mInstance = new SharedPreference();
+        return mInstance;
+    }
+
+    public void Initialize(Context ctxt)
+    {
+        mContext = ctxt;
+
+        mMyPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
+    }
+
+    public void setString(String key, String value){
+        SharedPreferences.Editor e = mMyPreferences.edit();
+        e.putString(key, value);
+        e.commit();
+    }
+
+    public String getString(String key)
+    {
+        return mMyPreferences.getString(key,"");
+    }
+
+    public void setboolean(String key,boolean value){
+        SharedPreferences.Editor e = mMyPreferences.edit();
+        e.putBoolean(key, value);
+        e.commit();
+    }
+
+    public boolean getBoolean(String key)
+    {
+        return mMyPreferences.getBoolean(key, false);
+    }
+
+   /* public void setbooleanMPIN(String key,boolean value){
+        SharedPreferences.Editor e = mMyPreferences.edit();
+        e.putBoolean(key, value);
+        e.commit();
+    }
+
+    public boolean getBooleanMPIN(String key)
+    {
+        return mMyPreferences.getBoolean(key,false);
+    }*/
+
+
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#005A99"
+              android:orientation="vertical">
+
+   <!-- <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#005A98"
+        >
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/backarrow"
+            />
+
+        <TextView
+            android:id="@+id/txtShareQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+
+            android:padding="15dp"
+
+
+            android:text="Share QR Code"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/share"
+            />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="9"
+        android:background="#005A99"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:background="@android:color/white">
+
+
+            <!--   <TextView
+                   android:id="@+id/tvqrscandetails"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="15dp"
+
+                   android:text="Got it !"
+                   android:textColor="#448AFF"
+                   android:textSize="24sp"
+                   android:textStyle="bold"/>-->
+
+
+            <ImageView
+                android:id="@+id/img_qr"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@android:color/white"
+
+            >
+
+            <TextView
+                android:id="@+id/tvrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="120dp"
+
+
+                android:text="₹"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+
+
+            <EditText
+                android:id="@+id/edtamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+android:textAlignment="center"
+                android:height="48dp"
+                android:inputType="numberDecimal"
+
+                android:maxLength="10"
+                android:text="0"
+
+                android:textColor="#07B371"
+                android:textSize="35dp"
+                android:textStyle="normal"
+
+
+                />
+
+            <TextView
+                android:id="@+id/tvamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtamount"
+                android:layout_centerInParent="true"
+android:padding="5dp"
+                android:text="amount"
+                android:textColor="#DFDFDF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/txt_regenerateQR"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+      android:layout_gravity="bottom"
+        android:text="Re-Generate QR"
+        android:background="#4CB050"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>

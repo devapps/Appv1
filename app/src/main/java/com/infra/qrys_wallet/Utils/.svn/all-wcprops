@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils
+END
+DataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/DataBase.java
+END
+SharedPreference.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/SharedPreference.java
+END
+ParsedNdefRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/ParsedNdefRecord.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/310/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/Constants.java
+END
+ReadSmsOTP.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/272/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/ReadSmsOTP.java
+END
+ContactHolderDesignPattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/ContactHolderDesignPattern.java
+END
+MaskedWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/MaskedWatcher.java
+END
+SmartPoster.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/SmartPoster.java
+END
+TextRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/TextRecord.java
+END
+SendAlertDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/SendAlertDialogFragment.java
+END
+MaskedFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/MaskedFormatter.java
+END
+RoundImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/RoundImage.java
+END
+ScanQRMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/ScanQRMain.java
+END
+RequestDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/RequestDialogFragment.java
+END
+MWRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/MWRequest.java
+END
+DataHolderClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/DataHolderClass.java
+END
+SendDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/SendDialogFragment.java
+END
+RoundedImageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/RoundedImageView.java
+END
+NdefMessageParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/NdefMessageParser.java
+END
+GraphicsUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/GraphicsUtil.java
+END
+Slider_AppIntro.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/Slider_AppIntro.java
+END
+UriRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Utils/UriRecord.java
+END

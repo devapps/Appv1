@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/drawerWidth"
+
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    tools:ignore="MissingPrefix">
+
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <!--This is for logo on right side-->
+        <!--This is for logo on right side-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sections"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+
+        >
+
+        <TextView
+            android:id="@+id/lblsetmobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lblinstructionotp"
+            android:textAlignment="center"
+            android:textSize="26dp"/>
+
+
+        <EditText
+            android:id="@+id/otpforaddaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblsetmobileno"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:hint="OTP"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textAlignment="center"
+            android:textColor="#9c9c9c"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otpforaddaccount"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="@string/otpinstruction"
+            android:textAlignment="center"
+            android:textColor="#c5c5c5"
+            android:textSize="12dp"
+            />
+
+        <EditText
+            android:id="@+id/usermobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/edit"
+            android:gravity="center_horizontal"
+            android:hint="@string/mobileno"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textAlignment="center"
+
+            android:textColor="#606060"
+            android:textSize="30dp"
+            android:textStyle="normal"
+
+            />
+
+        <TextView
+            android:id="@+id/tvresend"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usermobileno"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="Resend OTP"
+            android:textAlignment="center"
+            android:textColor="#005a99"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+
+
+        <Button
+            android:id="@+id/btngonext"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_below="@+id/tvresend"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/go_next"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

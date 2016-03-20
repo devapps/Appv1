@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/qrys/!svn/ver/313/trunk/trunk/QRys_Wallet/app
+END
+app.iml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/qrys/!svn/ver/257/trunk/trunk/QRys_Wallet/app/app.iml
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/.gitignore
+END
+proguard-rules.pro
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/proguard-rules.pro
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/qrys/!svn/ver/257/trunk/trunk/QRys_Wallet/app/build.gradle
+END

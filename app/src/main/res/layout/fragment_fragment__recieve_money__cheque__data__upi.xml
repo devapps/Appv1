@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheque Details"
+        android:id="@+id/textView18"
+        android:layout_alignBottom="@+id/editTextChequeNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheque Number"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/editTextChequeNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextChequeNumber"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Cheque Number..."
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:id="@+id/textView14"
+        android:layout_alignBottom="@+id/editTextChequeNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAmount"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Amount..."
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Date"
+        android:id="@+id/textView16"
+        android:layout_alignBottom="@+id/editTextChequeNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-120dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextIssuedDate"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Issue Date..."
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benificiary Name"
+        android:id="@+id/textView17"
+        android:layout_alignBottom="@+id/editTextChequeNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-200dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextBenName"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Benificiary Name..."
+        android:layout_alignParentTop="true"
+        />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Send Notification..."
+        android:id="@+id/buttonSendNotification"
+        android:layout_below="@+id/editTextChequeNumber"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/ColorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="270dp"
+        android:textSize="18dp"/>
+</RelativeLayout>

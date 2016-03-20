@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.infra.qrys_wallet.Registration.IndividualUserInfo">
+
+    <RelativeLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#325A99"
+        >
+
+        <TextView
+            android:id="@+id/tvindividual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:text="Individual"
+            android:textAlignment="center"
+            android:textColor="#EEF1F6"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvpersonname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@+id/tvindividual"
+            android:gravity="center_horizontal"
+            android:text="Person Name"
+            android:textAlignment="center"
+            android:textColor="#8098BE"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/innersection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+
+        >
+
+        <!-- Editext for Search -->
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Banks.."
+            android:padding="15dp"
+            android:inputType="textVisiblePassword"/>
+
+        <!-- List View -->
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_below="@+id/inputSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+
+            android:id="@+id/individualimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/individual"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

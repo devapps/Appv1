@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim
+END
+move_left_in_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/move_left_in_activity.xml
+END
+move_left_out_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/move_left_out_activity.xml
+END
+slide_up_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/slide_up_dialog.xml
+END
+view_hide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/view_hide.xml
+END
+move_right_in_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/move_right_in_activity.xml
+END
+move_right_out_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/move_right_out_activity.xml
+END
+left_to_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/left_to_right.xml
+END
+right_to_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/right_to_left.xml
+END
+view_show.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/view_show.xml
+END
+slide_out_down.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/anim/slide_out_down.xml
+END

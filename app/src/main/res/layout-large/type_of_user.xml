@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:baselineAligned="false"
+              android:orientation="vertical"
+              android:weightSum="1"
+              tools:context="com.infra.qrys_wallet.Registration.TypeOfUser"
+              tools:ignore="MissingPrefix">
+    <!--Upper half-->
+    <RelativeLayout
+
+        android:id="@+id/firsthalf"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+            android:id="@+id/titleone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Register as an"
+            android:textAlignment="center"
+            android:textColor="#B0C1D8"
+            android:textSize="18dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/titletwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Individual"
+            android:textAlignment="center"
+            android:textColor="#5072A7"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/titlesub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titletwo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Please select as an individual\nif you are using the application for yourself."
+            android:textAlignment="center"
+            android:textColor="#B0C1D8"
+            android:textSize="12dp"
+            />
+
+        <ImageView
+            android:id="@+id/individualarrow"
+            android:layout_width="17dp"
+            android:layout_height="9dp"
+            android:layout_below="@+id/titlesub"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            android:src="@drawable/user_selection_1"
+            />
+
+        <ImageView
+
+            android:id="@+id/individualimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/individual"
+            />
+
+    </RelativeLayout>
+    <!--Lower Half-->
+    <RelativeLayout
+
+        android:id="@+id/secondhalf"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/titleonesecondhalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Register as an"
+            android:textAlignment="center"
+            android:textColor="#E8B6B8"
+            android:textSize="18dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/titletwosecondhalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleonesecondhalf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Organisation"
+            android:textAlignment="center"
+            android:textColor="#C23137"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/titlesuborg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titletwosecondhalf"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Please select an Organisation\nif you are using the application for the company,shope etc."
+            android:textAlignment="center"
+            android:textColor="#B0C1D8"
+            android:textSize="12dp"
+            />
+
+        <ImageView
+            android:id="@+id/orgarrow"
+            android:layout_width="17dp"
+            android:layout_height="9dp"
+            android:layout_below="@+id/titlesuborg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+
+            android:src="@drawable/user_selection_2"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/organization"/>
+
+    </RelativeLayout>
+</LinearLayout>

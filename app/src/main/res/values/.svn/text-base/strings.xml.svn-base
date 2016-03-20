@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">QRys Wallet</string>
+
+    <!--Register Mobile No Screen -->
+    <string name="lblsetmobileno">Lets start by verifying your mobile number</string>
+    <string name="lblinstruction">We will send you one time password to verify your mobile number</string>
+    <string name="prompttst">India</string>
+    <!---->
+<!--Otp Screen-->
+    <string name="lblinstructionotp">Enter OTP to verify\n your mobile number</string>
+    <string name="otpinstruction">Please enter the OTP sent on your\n registered mobile number.</string>
+    <string name="mobileno">Mobile Number</string>
+
+    <!---->
+
+
+    <string name="action_settings">Settings</string>
+    <string-array name="array_name">
+        <item>Select other bank</item>
+        <item>Abhyudaya Bank</item>
+        <item>ICICI Bank</item>
+        <item>HDFC Bank</item>
+    </string-array>
+
+
+    <string name="intro_message">This is a simple app to read various tags (NDEF, RFID, FeliCa, ISO 14443, etc).\n\nYou use it by holding a tag/card against the back of your device.\n\nPlease let me know if you want me to change how the data is displayed. Also send me an e-mail (adam@anyro.se) if you have any problems with the app and I\'ll let you know when I\'ve fixed it. You can also see the source code and report issues at https://github.com/nadam/nfc-reader.\n\nIf you can\'t read any tag, please try some of the other NFC apps on Google Play and let me know if this app is the only one not working. Thanks!\n\n/Adam</string>
+    <string name="error">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+    <string name="title_activity_load_balance">LoadBalance</string>
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+    <string name="title_activity_register_mobile_no">RegisterMobileNo</string>
+    <string name="title_activity_type_of_user">TypeOfUser</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_individual_user_info">IndividualUserInfo</string>
+    <string name="title_activity_dash_board">QRys Mobile</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_transaction_history">TransactionHistory</string>
+    <string name="LBL_CONFIRM_MPIN">Confirm your 4 digit MPIN</string>
+    <string name="MSG_ENTER_MPIN">Please enter MPIN.</string>
+    <string name="MSG_CURRENT_MPIN">Please enter Current MPIN.</string>
+    <string name="MSG_CONFIRM_MPIN">Please Confirm MPIN.</string>
+    <string name="LBL_CURRENT_MPIN">Enter your 4 digit MPIN</string>
+    <string name="LBL_SET_MPIN">Set your new 4 digit MPIN</string>
+    <string name="MSG_PLEASE_WAIT">Please Wait..</string>
+    <string name="MSG_UNABLE_TO_REACH_SERVER">Unable to reach server</string>
+    <string name="title_activity_contacts">Contacts</string>
+    <string name="LBL_INDIVIDUAL">Individual</string>
+    <string name="LBL_ORGANIZATION">Organization</string>
+    <string name="LBL_SEND_MONEY">SEND MONEY</string>
+    <string name="LBL_RECEIVE_MONEY">RECEIVE MONEY</string>
+    <string name="title_activity_qrys_user_phone_book">QRysUserPhoneBook</string>
+    <string name="title_activity_invite_friends">InviteFriends</string>
+    <string name="title_activity_nfc_tag_read">NfcTagRead</string>
+    <string name="title_activity_customer_already_reg">CustomerAlreadyReg</string>
+    <string name="title_activity_logout_user">LogoutUser</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_share_qr">ShareQR</string>
+    <!--Push Notification resourses-->
+    <string name="ups_url_parse_error">Unable to reach UnifiedPushServer at %1$s.</string>
+    <string name="registration_successful">Registration Successful</string>
+    <string name="registration_error">"An error occurred during device registration"</string>
+    <string name="notifications">Notifications</string>
+    <string name="registering">Registering…</string>
+    <string name="nothing_here">Nothing here yet</string>
+    <string name="send_notification">Send notifications from the console</string>
+    <string name="notification_icon">Notification icon</string>
+</resources>

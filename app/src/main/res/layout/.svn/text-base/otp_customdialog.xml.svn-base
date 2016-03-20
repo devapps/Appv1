@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="100dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="100dp"
+    android:background="#ffffff"
+    android:padding="20px"
+    >
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5px"
+        android:text="Enter OTP to verify your mobile number"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/firstnameviecw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="25dp">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/otpforaddaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:hint="OTP"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textColor="#B3B3B3"
+        android:textSize="30dp"
+
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/firstnameviecw"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpforaddaccount"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:text="@string/otpinstruction"
+        android:textAlignment="center"
+        android:textColor="#c5c5c5"
+        android:textSize="12dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Confirm"
+        android:background="@color/zxing_transparent"
+        android:textColor="#325A99"
+        android:id="@+id/otpok"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Cancel"
+        android:background="@color/zxing_transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/otpok"
+        android:layout_toStartOf="@+id/otpok"
+        android:id="@+id/otpcancel" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters
+END
+Individual_BankListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/Individual_BankListAdapter.java
+END
+PhoneBook_SelectUser_Adapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/PhoneBook_SelectUser_Adapter.java
+END
+ListOfAddAccount_Adapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/ListOfAddAccount_Adapter.java
+END
+DashboardScreen_Adapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/DashboardScreen_Adapter.java
+END
+NotificationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/NotificationAdapter.java
+END
+TransactionHistory_Adapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/TransactionHistory_Adapter.java
+END
+mWallet_Deals_List_Adapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/java/com/infra/qrys_wallet/Adapters/mWallet_Deals_List_Adapter.java
+END

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgrequestmoney"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+
+            android:src="@drawable/mwalletcontact"/>
+
+        <TextView
+            android:id="@+id/tvrequestmoney"
+            style="@style/DialogWindowTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:padding="5px"
+            android:text="Contacts"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgrequestqr"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/shareqr"/>
+
+        <TextView
+            android:id="@+id/tvshareqr"
+            style="@style/DialogWindowTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:padding="5px"
+            android:text="Share QR"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

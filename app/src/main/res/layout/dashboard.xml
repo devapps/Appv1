@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#005A99"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="9"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:id="@+id/topParent"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="@string/LBL_SEND_MONEY"
+                android:id="@+id/textView"
+                android:layout_alignLeft="@+id/imgSendContact"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="40dp" />
+
+            <ImageView
+                android:id="@+id/imgSendContact"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/contact"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/imgSendNFC"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/nfctransfer"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgSendContact"
+                android:layout_toEndOf="@+id/imgSendContact"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/imgSendScanQR"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/scanqr"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgSendNFC"
+                android:layout_toEndOf="@+id/imgSendNFC" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/topSwipeLayout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/bottomSwipeLayoutImg"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/sendmoney_upi" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:id="@+id/bottomParent"
+            android:background="@android:color/white"
+
+            >
+            <ImageView
+                android:id="@+id/imgReceContact"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/receivecontact"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="80dp" />
+
+
+            <ImageView
+                android:id="@+id/imgReceShareQR"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/shareqr"
+                android:layout_gravity="center"
+                android:layout_alignTop="@+id/imgReceContact"
+                android:layout_toRightOf="@+id/imgReceContact"
+                android:layout_toEndOf="@+id/imgReceContact"
+                android:layout_marginLeft="30dp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="@string/LBL_RECEIVE_MONEY"
+                android:id="@+id/textView2"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/imgReceContact"
+                android:layout_alignStart="@+id/imgReceContact"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="60dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/bottomSwipeLayout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/topSwipeLayoutImg"
+                    android:src="@drawable/receivemoney" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/BalanceEnquiry"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#f2f2f2" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

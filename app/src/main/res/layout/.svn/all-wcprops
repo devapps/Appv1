@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/qrys/!svn/ver/275/trunk/trunk/QRys_Wallet/app/src/main/res/layout
+END
+tag_viewer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/tag_viewer.xml
+END
+phonebook_display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/275/trunk/trunk/QRys_Wallet/app/src/main/res/layout/phonebook_display.xml
+END
+phonebook_row_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/phonebook_row_info.xml
+END
+invite_friends.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/invite_friends.xml
+END
+register_mobile_no.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/res/layout/register_mobile_no.xml
+END
+dialog_forwalletrequest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/255/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dialog_forwalletrequest.xml
+END
+balanceenquiry.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/balanceenquiry.xml
+END
+individual_share_qr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/individual_share_qr.xml
+END
+splash.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/splash.xml
+END
+login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/res/layout/login.xml
+END
+notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/notification.xml
+END
+tool_bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/tool_bar.xml
+END
+addaccount_customdialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/addaccount_customdialog.xml
+END
+transaction_history_single_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/transaction_history_single_row.xml
+END
+get_started_screen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/get_started_screen.xml
+END
+tag_divider.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/tag_divider.xml
+END
+banklist_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/banklist_row.xml
+END
+dashboard_screen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dashboard_screen.xml
+END
+custom_dialog_invitebymsg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/res/layout/custom_dialog_invitebymsg.xml
+END
+dashboard_item_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dashboard_item_row.xml
+END
+wallet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/qrys/!svn/ver/257/trunk/trunk/QRys_Wallet/app/src/main/res/layout/wallet.xml
+END
+individual_user_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/individual_user_info.xml
+END
+spinner_item_display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/spinner_item_display.xml
+END
+accounts_listview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/accounts_listview.xml
+END
+intro_screen_three.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/intro_screen_three.xml
+END
+introscreen_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/introscreen_one.xml
+END
+synchcontacts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/synchcontacts.xml
+END
+share_qr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/res/layout/share_qr.xml
+END
+notification_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/notification_row.xml
+END
+sendmoneyfragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/sendmoneyfragment.xml
+END
+otp_customdialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/otp_customdialog.xml
+END
+contactsendmoney_receipt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/contactsendmoney_receipt.xml
+END
+dashboard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dashboard.xml
+END
+dashboard_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dashboard_header.xml
+END
+wallet_loadmoneydialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/wallet_loadmoneydialog.xml
+END
+wallet_requestmoneydialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/wallet_requestmoneydialog.xml
+END
+custom_dialog_paymentdone.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/custom_dialog_paymentdone.xml
+END
+mwallet_offers_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/mwallet_offers_detail.xml
+END
+individual_user_account_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/individual_user_account_details.xml
+END
+profile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/profile.xml
+END
+otp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/res/layout/otp.xml
+END
+intro_screen_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/intro_screen_two.xml
+END
+type_of_user.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/type_of_user.xml
+END
+nfc_tag_read.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/nfc_tag_read.xml
+END
+individual_send_money.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/individual_send_money.xml
+END
+dialog_forwalletload.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/255/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dialog_forwalletload.xml
+END
+mwallet_offers_single_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/mwallet_offers_single_row.xml
+END
+tag_text.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/tag_text.xml
+END
+transaction_history.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/transaction_history.xml
+END
+custom_dialog_notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/custom_dialog_notification.xml
+END
+contacts_send_money.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/contacts_send_money.xml
+END
+change_mpin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/change_mpin.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/main.xml
+END
+individual_listofbanks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/individual_listofbanks.xml
+END
+nfcsplashscreen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/nfcsplashscreen.xml
+END
+dashboard_screen_wallet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/256/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dashboard_screen_wallet.xml
+END
+tag_viewer_nfc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/tag_viewer_nfc.xml
+END
+set_mpin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/set_mpin.xml
+END
+custom_dialog_requestsendformoney.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/custom_dialog_requestsendformoney.xml
+END
+intro_screen_four.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/intro_screen_four.xml
+END
+qrys_user_phone_book.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/qrys_user_phone_book.xml
+END
+message_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/message_item.xml
+END
+customer_already_reg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/274/trunk/trunk/QRys_Wallet/app/src/main/res/layout/customer_already_reg.xml
+END
+messages.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/messages.xml
+END
+mwallet_offers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/mwallet_offers.xml
+END
+dialog_forwalletsend.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/258/trunk/trunk/QRys_Wallet/app/src/main/res/layout/dialog_forwalletsend.xml
+END
+individual_banklistitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/individual_banklistitem.xml
+END
+contacts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/contacts.xml
+END
+custom_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/app/src/main/res/layout/custom_dialog.xml
+END
