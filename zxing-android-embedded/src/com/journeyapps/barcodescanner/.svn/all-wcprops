@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner
+END
+CompoundBarcodeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/CompoundBarcodeView.java
+END
+BarcodeEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/BarcodeEncoder.java
+END
+DefaultDecoderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/DefaultDecoderFactory.java
+END
+RotationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/RotationListener.java
+END
+Decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/Decoder.java
+END
+Size.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/Size.java
+END
+RotationCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/RotationCallback.java
+END
+BarcodeCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/BarcodeCallback.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/Util.java
+END
+CaptureActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/CaptureActivity.java
+END
+CameraPreview.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/CameraPreview.java
+END
+BarcodeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/BarcodeView.java
+END
+SourceData.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/SourceData.java
+END
+DecoderResultPointCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/DecoderResultPointCallback.java
+END
+DecoderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/DecoderFactory.java
+END
+DecoderThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/DecoderThread.java
+END
+ViewfinderView.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/ViewfinderView.java
+END
+CaptureManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/CaptureManager.java
+END
+BarcodeResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/BarcodeResult.java
+END

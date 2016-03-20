@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/qrys/!svn/ver/267/trunk/trunk/QRys_Wallet/zxing-android-embedded
+END
+zxing-android-embedded.iml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/261/trunk/trunk/QRys_Wallet/zxing-android-embedded/zxing-android-embedded.iml
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/AndroidManifest.xml
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/build.gradle
+END

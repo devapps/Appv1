@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android
+END
+DecodeHintManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android/DecodeHintManager.java
+END
+AmbientLightManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android/AmbientLightManager.java
+END
+InactivityTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android/InactivityTimer.java
+END
+Intents.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android/Intents.java
+END
+BeepManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android/BeepManager.java
+END
+DecodeFormatManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/google/zxing/client/android/DecodeFormatManager.java
+END

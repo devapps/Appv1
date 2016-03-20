@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter
+END
+DefaultFillFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/DefaultFillFormatter.java
+END
+ValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/ValueFormatter.java
+END
+ColorFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/ColorFormatter.java
+END
+DefaultXAxisValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/DefaultXAxisValueFormatter.java
+END
+DefaultYAxisValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/DefaultYAxisValueFormatter.java
+END
+PercentFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/PercentFormatter.java
+END
+DefaultValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/DefaultValueFormatter.java
+END
+FillFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/FillFormatter.java
+END
+LargeValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/LargeValueFormatter.java
+END
+XAxisValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/XAxisValueFormatter.java
+END
+YAxisValueFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/formatter/YAxisValueFormatter.java
+END

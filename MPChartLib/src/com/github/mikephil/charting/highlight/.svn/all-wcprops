@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight
+END
+CombinedHighlighter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight/CombinedHighlighter.java
+END
+ChartHighlighter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight/ChartHighlighter.java
+END
+BarHighlighter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight/BarHighlighter.java
+END
+Highlight.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight/Highlight.java
+END
+Range.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight/Range.java
+END
+HorizontalBarHighlighter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/highlight/HorizontalBarHighlighter.java
+END

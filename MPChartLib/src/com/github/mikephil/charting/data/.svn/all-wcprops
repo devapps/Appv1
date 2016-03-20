@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data
+END
+RadarDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/RadarDataSet.java
+END
+ScatterData.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/ScatterData.java
+END
+Entry.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/Entry.java
+END
+BubbleDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BubbleDataSet.java
+END
+LineScatterCandleRadarDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/LineScatterCandleRadarDataSet.java
+END
+LineRadarDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/LineRadarDataSet.java
+END
+PieData.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/PieData.java
+END
+CandleEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/CandleEntry.java
+END
+CombinedData.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/CombinedData.java
+END
+BarDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BarDataSet.java
+END
+ScatterDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/ScatterDataSet.java
+END
+BubbleEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BubbleEntry.java
+END
+BarLineScatterCandleBubbleData.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BarLineScatterCandleBubbleData.java
+END
+CandleData.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/CandleData.java
+END
+LineData.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/LineData.java
+END
+PieDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/PieDataSet.java
+END
+RadarData.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/RadarData.java
+END
+DataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/DataSet.java
+END
+BubbleData.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BubbleData.java
+END
+BarEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BarEntry.java
+END
+ChartData.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/ChartData.java
+END
+BarLineScatterCandleBubbleDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BarLineScatterCandleBubbleDataSet.java
+END
+CandleDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/CandleDataSet.java
+END
+LineDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/LineDataSet.java
+END
+BarData.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/data/BarData.java
+END

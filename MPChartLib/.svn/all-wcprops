@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/qrys/!svn/ver/262/trunk/trunk/QRys_Wallet/MPChartLib
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/project.properties
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/.gitignore
+END
+MPChartLib.iml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/qrys/!svn/ver/262/trunk/trunk/QRys_Wallet/MPChartLib/MPChartLib.iml
+END
+proguard-project.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/proguard-project.txt
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/AndroidManifest.xml
+END
+ic_launcher-web.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/ic_launcher-web.png
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/pom.xml
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/build.gradle
+END

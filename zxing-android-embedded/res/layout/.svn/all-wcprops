@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/qrys/!svn/ver/259/trunk/trunk/QRys_Wallet/zxing-android-embedded/res/layout
+END
+zxing_capture.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/res/layout/zxing_capture.xml
+END
+zxing_barcode_scanner.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/qrys/!svn/ver/259/trunk/trunk/QRys_Wallet/zxing-android-embedded/res/layout/zxing_barcode_scanner.xml
+END

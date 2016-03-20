@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/qrys/!svn/ver/256/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components
+END
+AxisBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/AxisBase.java
+END
+LimitLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/LimitLine.java
+END
+MarkerView.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/MarkerView.java
+END
+XAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/XAxis.java
+END
+ComponentBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/ComponentBase.java
+END
+YAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/YAxis.java
+END
+Legend.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/256/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/components/Legend.java
+END

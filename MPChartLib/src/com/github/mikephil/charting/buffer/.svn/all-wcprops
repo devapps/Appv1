@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer
+END
+ScatterBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/ScatterBuffer.java
+END
+LineBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/LineBuffer.java
+END
+CandleShadowBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/CandleShadowBuffer.java
+END
+HorizontalBarBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/HorizontalBarBuffer.java
+END
+CircleBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/CircleBuffer.java
+END
+AbstractBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/AbstractBuffer.java
+END
+BarBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/BarBuffer.java
+END
+CandleBodyBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/buffer/CandleBodyBuffer.java
+END

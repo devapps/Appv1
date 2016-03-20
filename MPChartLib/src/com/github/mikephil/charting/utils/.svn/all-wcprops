@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils
+END
+FSize.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/FSize.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/FileUtils.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/Utils.java
+END
+Transformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/Transformer.java
+END
+TransformerHorizontalBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/TransformerHorizontalBarChart.java
+END
+SelectionDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/SelectionDetail.java
+END
+EntryXIndexComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/EntryXIndexComparator.java
+END
+ColorTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/ColorTemplate.java
+END
+PointD.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/PointD.java
+END
+ViewPortHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/utils/ViewPortHandler.java
+END

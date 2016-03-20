@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera
+END
+CameraThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/CameraThread.java
+END
+AutoFocusManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/AutoFocusManager.java
+END
+CameraManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/CameraManager.java
+END
+CameraSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/CameraSettings.java
+END
+CameraInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/CameraInstance.java
+END
+DisplayConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/DisplayConfiguration.java
+END
+PreviewCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/PreviewCallback.java
+END

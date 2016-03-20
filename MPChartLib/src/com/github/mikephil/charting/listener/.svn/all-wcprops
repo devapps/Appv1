@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener
+END
+OnDrawListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/OnDrawListener.java
+END
+PieRadarChartTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/PieRadarChartTouchListener.java
+END
+OnChartGestureListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/OnChartGestureListener.java
+END
+BarLineChartTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/BarLineChartTouchListener.java
+END
+ChartTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/ChartTouchListener.java
+END
+OnChartValueSelectedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/OnChartValueSelectedListener.java
+END
+OnDrawLineChartTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/MPChartLib/src/com/github/mikephil/charting/listener/OnDrawLineChartTouchListener.java
+END
