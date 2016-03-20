@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/res/layout
+END
+default_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/res/layout/default_indicator.xml
+END
+progress_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/res/layout/progress_indicator.xml
+END
+intro_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/res/layout/intro_layout.xml
+END
+intro_layout2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/res/layout/intro_layout2.xml
+END
+fragment_intro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/res/layout/fragment_intro.xml
+END

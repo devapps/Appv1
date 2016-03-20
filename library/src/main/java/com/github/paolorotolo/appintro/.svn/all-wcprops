@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro
+END
+FadePageTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/FadePageTransformer.java
+END
+PagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/PagerAdapter.java
+END
+AppIntroFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/AppIntroFragment.java
+END
+IndicatorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/IndicatorController.java
+END
+DefaultIndicatorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/DefaultIndicatorController.java
+END
+ProgressIndicatorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/ProgressIndicatorController.java
+END
+ResourceUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/ResourceUtils.java
+END
+ViewPageTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/ViewPageTransformer.java
+END
+AppIntro.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/AppIntro.java
+END
+AppIntro2.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/src/main/java/com/github/paolorotolo/appintro/AppIntro2.java
+END

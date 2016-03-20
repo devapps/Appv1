@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/qrys/!svn/ver/263/trunk/trunk/QRys_Wallet/library
+END
+maven-push.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/maven-push.gradle
+END
+library.iml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/qrys/!svn/ver/263/trunk/trunk/QRys_Wallet/library/library.iml
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/.gitignore
+END
+gradle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/gradle.properties
+END
+proguard-rules.pro
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/proguard-rules.pro
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/qrys/!svn/ver/241/trunk/trunk/QRys_Wallet/library/build.gradle
+END
